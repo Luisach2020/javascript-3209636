@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+     background-image: url(./img/fondogranja.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 750px;
+    height: 500px;
+}
+
+.caballo{
+    background-image: url(./img/caballo.png);
+    height: 125px;
+    width: 125px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 30%;
+    left: 60px;
+}
+
+.nubes{
+    background-image: url(./img/nubes.png);
+    height: 125px;
+    width: 125px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.moneda{
+    background-image: url(./img/moneda.png);
+    height: 125px;
+    width: 125px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
