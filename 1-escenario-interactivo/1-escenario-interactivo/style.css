@@ -3,50 +3,132 @@
     padding: 0;
 
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+body {
+  background-color: (pink);
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-section{
-     background-image: url(./img/fondogranja.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 750px;
-    height: 500px;
-}
-
-.caballo{
-    background-image: url(./img/caballo.png);
-    height: 125px;
-    width: 125px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 30%;
-    left: 60px;
-}
-
-.nubes{
-    background-image: url(./img/nubes.png);
-    height: 125px;
-    width: 125px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.moneda{
-    background-image: url(./img/moneda.png);
-    height: 125px;
-    width: 125px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.contenedor{
+  display: flex;
+  width: 750px;
+  height: 500px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 
+.fondo {
+  position: relative;
+  width: 750px;
+  height: 500px;
+
+}
+
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 500px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.nube {
+  position: absolute;
+  top: 15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  z-index: 4; 
+  animation: movenube 7s ease-in-out infinite alternate;
+}
+
+.nube2 {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+  width: 120px;
+  z-index: 2;
+  animation: movetubo 4s linear infinite;
+}
+
+
+.clickable {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.coin {
+  width: 60px;
+}
 
 
 
+.moneda1{ 
+    top: 285px;
+    left: 375px;
+   
+}
 
+.moneda2 {
+  top: 315px; 
+  left: 70px; 
+
+} 
+
+
+.moneda3 {
+  top: 280px; 
+  left: 180px; 
+}
+
+  
+.moneda4 {
+  top: 235px; 
+  left: 450px; z-index:3; 
+}
+
+
+
+.clickable:hover {
+  transform: scale(1.2);
+}
+
+.score-board {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+
+}
+
+/*Animacion moneda*/
+.saltar{
+  animation: salto 0.6s ease forwards;
+}
+
+
+@keyframes movenube {
+  0% { transform: translateX(-50%) translateX(-120px); }
+  50% { transform: translateX(-50%) translateX(120px); }
+  100% { transform: translateX(-50%) translateX(-120px); }
+}
+
+@keyframes moverMonedas{
+  0% {left: 55%;}
+  100% {left: 89%;}
+}
