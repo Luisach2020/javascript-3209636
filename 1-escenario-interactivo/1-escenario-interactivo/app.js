@@ -1,6 +1,6 @@
 const animal = document.querySelectorAll(".animales")
 const counter = document.querySelector(".contador")
-let i = 
+let i = 0
 let j = 0 
 
 console.log(animal)
