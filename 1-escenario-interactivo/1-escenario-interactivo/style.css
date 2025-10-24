@@ -55,22 +55,25 @@ section {
 }
 
 .moneda1{ 
-    top: 100px;
-     left: 150px;
-     z-index:3; 
+    top: 63%;
+     left: 27%;
+     z-index:3;
+     width: 60px; 
 }
 .moneda2 {
-  top: 120px; 
-  left: 300px; 
+  top:  49%; 
+  left: 38%; 
   z-index:3; 
     }
 .moneda3 {
-  top: 220px; 
-  left: 220px; z-index:3;
+  top:  50%; 
+  left: 78%;
+   z-index:3;
   }
 .moneda4 {
-  top: 240px; 
-  left: 420px; z-index:3; 
+  top:  59%; 
+  left: 67%;
+   z-index:3; 
     }
 
 .clickable:hover {
@@ -166,6 +169,14 @@ section {
   left: 19%;
 }
 
+.fantasma img{
+  width: 150px;
+  height: 180px;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+}
+
 .counter {
   position: absolute;
   top: 15px;
@@ -176,5 +187,86 @@ section {
   z-index: 5;
   color: white;
   border: 2px solid white;
+  border-radius: 7px;
+}
+
+.nieve{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  min-width: 800px;
+}
+
+.fondo3{
+  background-image: url(./img/fondonieve.jpg);
+  position: relative;
+  width: 750px;
+  height: 500px;
+  background-size: cover;
+  border: 2.5px solid black;
+}
+
+.estrella img{
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: 0%;
+  left: 78%;
+}
+
+.luna img{
+   width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 0%;
+  left: 3%;
+}
+
+.copo1 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 47%;
+  left: 80%;
+}
+
+.copo2 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 52%;
+  left: 20%;
+}
+
+.copo3 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.copo4 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 29%;
+  left: 3%;
+}
+
+.contar{
+  position: absolute;
+  top: 89%;
+  left: 20px;
+  padding: 8px 15px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 7px;
 }
