@@ -1,14 +1,321 @@
-body{
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: blueviolet;
+*{
     margin: 0;
-    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-h1{
-    margin-bottom: 20px;
-    font-size: 3em;
+section {
+  display: flex;
+  height: 100vh;
+ justify-content: center;
+ align-items: center;
+  width: 100%;
+ 
 }
+
+.contenedor{
+  width: 750px;
+  height: 500px;
+  position: relative;
+  background-image: url(./img/fondogranja.png);
+  min-width: 750px;
+  background-size: cover;
+}
+
+
+
+
+
+.nube {
+  position: absolute;
+  top: 15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  z-index: 4; 
+  animation: movenube 4s ease-in-out infinite alternate;
+}
+
+
+
+
+.clickable {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.coin {
+  width: 40px;
+}
+
+.block {
+  width: 60px;
+}
+
+.moneda1{ 
+    top: 63%;
+     left: 27%;
+     z-index:3;
+     width: 60px; 
+}
+.moneda2 {
+  top:  49%; 
+  left: 38%; 
+  z-index:3; 
+    }
+.moneda3 {
+  top:  50%; 
+  left: 78%;
+   z-index:3;
+  }
+.moneda4 {
+  top:  59%; 
+  left: 67%;
+   z-index:3; 
+    }
+
+.clickable:hover {
+  transform: scale(1.2);
+}
+
+.contador {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+
+}
+
+
+@keyframes movenube {
+  0% { transform: translateX(-50%) translateX(-120px); }
+  50% { transform: translateX(-50%) translateX(120px); }
+  100% { transform: translateX(-50%) translateX(-120px); }
+}
+
+
+.fade-out {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+
+.halloween{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  min-width: 800px;
+}
+
+.fondo2{
+  background-image: url(./img/fondonoche.jpg);
+  position: relative;
+  width: 750px;
+  height: 500px;
+  background-size: cover;
+  border: 2.5px solid black;
+}
+
+
+.calabaza1 img{
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 45%;
+  left: 75%;
+}
+
+
+.calabaza2 img{
+   width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 22%;
+  left: 40%;
+}
+
+.calabaza3 img{
+   width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 45%;
+  left: 1%;
+}
+
+.calabaza4 img{
+  width: 85px;
+  height: 80px;
+  position: absolute;
+  top: 49%;
+  left: 29%;
+}
+
+.fade-out { transition: opacity .45s ease, transform .45s ease;
+   opacity: 0; 
+   transform: scale(.98); }
+
+  
+  @keyframes spiderBob { 
+    0% { transform: translateY(0); } 
+    50% { transform: translateY(8px); } 
+    100% { transform: translateY(0); } 
+  }
+
+  .animate-arana img {
+     animation: spiderBob 1.6s ease-in-out infinite; 
+    }
+
+  
+  @keyframes ghostFloat { 
+    0% { transform: translateY(0) rotate(0deg); } 
+    50% { transform: translateY(-12px) rotate(3deg); } 
+    100% { transform: translateY(0) rotate(0deg); } 
+  }
+  .animate-fantasma img {
+     animation: ghostFloat 2.2s ease-in-out infinite; }
+
+
+.araña img{
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  left: 19%;
+}
+
+.fantasma img{
+  width: 150px;
+  height: 180px;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+}
+
+.counter {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  padding: 8px 15px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+
+.nieve{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  min-width: 800px;
+}
+
+.fondo3{
+  background-image: url(./img/fondonieve.jpg);
+  position: relative;
+  width: 750px;
+  height: 500px;
+  background-size: cover;
+  border: 2.5px solid black;
+}
+
+.estrella img{
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: 0%;
+  left: 78%;
+}
+
+.luna img{
+   width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 0%;
+  left: 3%;
+}
+
+.copo1 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 47%;
+  left: 80%;
+}
+
+.copo2 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 52%;
+  left: 20%;
+}
+
+.copo3 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.copo4 img{
+  width: 135px;
+  height: 115px;
+  position: absolute;
+  top: 29%;
+  left: 3%;
+}
+
+.contar{
+  position: absolute;
+  top: 89%;
+  left: 20px;
+  padding: 8px 15px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 7px;
+}
+
+.fade-out { transition: opacity .45s ease, transform .45s ease; 
+  opacity: 0; transform: 
+  scale(.98);
+ }
+
+  
+  @keyframes shootingStarFloat { 
+    0% { transform: translateY(0) scale(1); opacity: 1; } 
+    40% { transform: translateY(-6px) scale(1.02); } 
+    60% { transform: translateY(0) scale(1); } 
+    100% { transform: translateY(0) scale(1); } }
+  .animate-estrella img { 
+    animation: shootingStarFloat 2.4s ease-in-out infinite;
+   }
+
+  
+  @keyframes moonDrift {
+     0% { transform: translateY(0) rotate(0deg); } 
+     50% { transform: translateY(-8px) rotate(2deg); } 
+     100% { transform: translateY(0) rotate(0deg); } }
+  .animate-luna img { 
+    animation: moonDrift 4s ease-in-out infinite;
+   }
