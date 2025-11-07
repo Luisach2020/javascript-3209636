@@ -8,87 +8,94 @@
 </head>
 <body>
 
-<section>
+<!-- Carrusel: envuelve las secciones existentes dentro de .carousel -->
+<div class="carousel" id="carrusel" aria-roledescription="carousel">
+  <div class="slides">
 
-  <div class="contenedor">
+    <section class="escena">
+      <div class="contenedor">
+        <img src="./img/nubes.png" class="nube" alt="">
 
-   <img src="./img/nubes.png" class="nube" alt="">
-   
+        <img src="./img/moneda.png" class="coin clickable moneda1" alt="">
+        <img src="./img/moneda.png" class="coin clickable moneda2" alt="">
+        <img src="./img/moneda.png" class="coin clickable moneda3" alt="">
+        <img src="./img/moneda.png" class="coin clickable moneda4" alt="">
 
-   <img src="./img/moneda.png" class="coin clickable moneda1" alt="">
-   <img src="./img/moneda.png" class="coin clickable moneda2" alt="">
-   <img src="./img/moneda.png" class="coin clickable moneda3" alt="">
-   <img src="./img/moneda.png" class="coin clickable moneda4" alt="">
+        <div class="contador">SCORE: <span class="numero">0</span></div>
+      </div>
+    </section>
 
-    <div class="contador">SCORE: <span class="numero">0</span></div>
- </div>
-</section>
+    <section class="escena halloween">
+      <div class="fondo2">
+        <div class="araña">
+          <img src="./img/araña (1).png" alt="">
+        </div>
+        <div class="fantasma">
+          <img src="./img/fastasma-removebg-preview.png" alt="">
+        </div>
+        <div class="calabaza1">
+          <img src="./img/calabaza (1).png" alt="">
+        </div>
+        <div class="calabaza2">
+           <img src="./img/calabaza (1).png" alt="">
+        </div>
+        <div class="calabaza3">
+           <img src="./img/calabaza (1).png" alt="">
+        </div>
+        <div class="calabaza4">
+           <img src="./img/calabaza (1).png" alt="">
+        </div>
+        <div class="counter">SCORE: <span class="numero">0</span></div>
+      </div>
+    </section>
 
-
-<section class="halloween">
-  <div class="fondo2">
-
-    <div class="araña">
-      <img src="./img/araña (1).png" alt="">
-    </div>
-
-    <div class="fantasma">
-      <img src="./img/fastasma-removebg-preview.png" alt="">
-    </div>
-
-    <div class="calabaza1">
-      <img src="./img/calabaza (1).png" alt="">
-    </div>
-
-    <div class="calabaza2">
-       <img src="./img/calabaza (1).png" alt="">
-    </div>
-
-    <div class="calabaza3">
-       <img src="./img/calabaza (1).png" alt="">
-    </div>
-
-    <div class="calabaza4">
-       <img src="./img/calabaza (1).png" alt="">
-    </div>
-  
-    <div class="counter">SCORE: <span class="numero">0</span></div>
-  
-  </div>
-</section>
-
-<section class="nieve">
-  <div class="fondo3">
-    <div class="estrella">
-      <img src="./img/estrellafugaz-removebg-preview (1).png" alt="">
-    </div>
-
-    <div class="luna">
-      <img src="./img/58889973-night-concept-represented-by-moon-cartoon-icon-isolated-and-flat-illustration.svg" alt="">
-    </div>
-
-    <div class="copo1">
-      <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
-    </div>
-    
-    <div class="copo2">
-      <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
-    </div>
-
-    <div class="copo3">
-      <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
-    </div>
-
-    <div class="copo4">
-      <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
-    </div>
-
-    <div class="contar">SCORE: <span class="numero">0</span></div>
+    <section class="escena nieve">
+      <div class="fondo3">
+        <div class="estrella">
+          <img src="./img/estrellafugaz-removebg-preview (1).png" alt="">
+        </div>
+        <div class="luna">
+          <img src="./img/58889973-night-concept-represented-by-moon-cartoon-icon-isolated-and-flat-illustration.svg" alt="">
+        </div>
+        <div class="copo1">
+          <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
+        </div>
+        <div class="copo2">
+          <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
+        </div>
+        <div class="copo3">
+          <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
+        </div>
+        <div class="copo4">
+          <img src="./img/pd_xue01_1-removebg-preview (1).png" alt="">
+        </div>
+        <div class="contar">SCORE: <span class="numero">0</span></div>
+      </div>
+    </section>
 
   </div>
-</section>
+
+  
+  <button class="carousel-button prev" aria-label="Previous slide">‹</button>
+  <button class="carousel-button next" aria-label="Next slide">›</button>
+
+  
+  <div class="carousel-indicators" role="tablist" aria-label="Slide indicators"></div>
+</div>
 
 
+
+  <div class="miniaturas">
+    <img src="img/fondogranja.png" class="miniatura" data-index="0" alt="Mini 1">
+    <img src="img/fondonieve.jpg" class="miniatura" data-index="1" alt="Mini 2">
+    <img src="img/fondonoche.jpg" class="miniatura" data-index="2" alt="Mini 3">
+  </div>
+
+
+  <audio id="audio-coin" src="sonidos/smb_coin.wav" preload="auto"></audio>
+  <audio id="audio-pumpkin" src="sonidos/Falling-object-sound-effect.mp3" preload="auto"></audio>
+  <audio id="audio-flake" src="sonidos/sieerra.mp3" preload="auto"></audio>
+  
 
 <script src="app.js"></script>
 </body>
