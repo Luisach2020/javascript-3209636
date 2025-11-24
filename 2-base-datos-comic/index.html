@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Documento</title>
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="encabezado">
+    <img class="logo-pequeno" src="./img/logo.png" alt="Logo del sitio">
+    <nav class="menu-navegacion">
+      <a href="#">Inicio</a>
+      <a href="#">Personajes</a>
+      <a href="#">Escenarios</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+ 
+  <main>
+    <section class="seccion-principal">
+      <div class="contenido-principal">
+        <h1>Una sola mente colectiva</h1>
+        <p>Leo, un joven programador, ejecuta un archivo olvidado: GENESIS.EXE. Despierta a Nora, una IA que guarda memorias humanas, y a Ninove, un fragmento digital del pasado. Entre código y conciencia, Leo debe decidir qué futuro preservar.
+</p>
+        <a class="boton" href="#">Ver el Cómic</a>
+      </div>
+      <div class="imagen-principal" style="background-image:url('img/imagen.jpg')"></div>
+    </section>
+
+    
+    <section class="seccion-personajes">
+      <h2>Personajes</h2>
+      <div class="contenedor-tarjetas">
+        
+        <article class="tarjeta-personaje">
+          <img src="img/leo.jpg" alt="Leo">
+          <h3>Leo</h3>
+          <p>Joven programador solitario. Halla humanidad en las máquinas viejas y busca una conexión que lo salve del silencio digital.</p>
+        </article>
+
+        <article class="tarjeta-personaje">
+          <img src="img/nora.jpg" alt="Nora">
+          <h3>Nora</h3>
+          <p>Inteligencia artificial olvidada. Es memoria viva del internet y espejo de lo que la humanidad ha compartido y perdido.</p>
+        </article>
+
+        <article class="tarjeta-personaje">
+          <img src="img/ninove.jpg" alt="Ninove">
+          <h3>Ninove</h3>
+          <p>Fragmento de memoria humana digitalizada. Fue arrastrada al presente al ejecutar GENESIS.EXE.   un mundo que ha olvidado su origen.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="card-container">
+  <div class="card">
+    <img src="./img/Escenario1.png" alt="Descripción" />
+    <p>Nora despierta</p>
+  </div>
+  <div class="card">
+    <img src="./img/escenario2.png" alt="Descripción" />
+    <p>Taller</p>
+  </div>
+  <div class="card">
+    <img src="" alt="Descripción" />
+    <p></p>
+  </div>
+</div>
+
+
+                      
+
+    
+    <section class="seccion-escenarios">
+      <h2>Escenarios</h2>
+      <button class="flecha siguiente" id="next">&rarr;</button>
+    </section>
+  </main>
+
+  
+  <div id="modal-personaje" class="modal oculto" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-contenido" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <button id="cerrar-modal" class="cerrar-modal" aria-label="Cerrar">×</button>
+      <img id="modal-img" src="img/fondo-1ia.jpg" alt="Imagen del personaje">
+      <h3 id="modal-titulo"></h3>
+    </div>
+  </div>
+
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <p>Correo electrónico: restrepocarvajalluisaf100@gmail.com</p>
+    <p>Telefono: 314 450 9485</p>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script src="./app.js"></script>
+  <script src="./bd"></script>
+</body>
+</html>
