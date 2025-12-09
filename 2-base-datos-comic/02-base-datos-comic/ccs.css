@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+ 
+  
+}
+
+
+.hero {
+ 
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  padding: 50px 30px;
+  justify-content: space-between;
+}
+
+
+.video{
+  width: 50%;
+  height: 90%;
+  padding: 20px;
+
+}
+.video video{
+  width: 100%;
+  height: 100%;
+}
+
+.hero-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  
+}
+
+
+
+
+.btn {
+  
+ 
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 50px;
+  padding: 25px 40px;
+}
+
+.play {
+  background: rgba(255, 0, 0, 0.73);
+  color: black;
+}
+
+.download {
+  background: #1a1a1a;
+  color: rgb(255, 89, 0);
+  border: 1px solid #444;
+}
+
+
+
+.description {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+
+}
+
+.description h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.description p {
+  max-width: 700px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
