@@ -1,10 +1,68 @@
 
-    body {
+  body {
       font-family: Arial, sans-serif;
-      background: #1a1a1a;
-      color: white;
-      padding: 20px;
+      background: #9dcbf7;
+      color: rgb(0, 0, 0);
+    
     }
+    body {
+  opacity: 0;
+  animation: fadeOpacity 5.2s ease-out forwards;
+}
+
+@keyframes fadeOpacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: rgba(124, 201, 231, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: #ffffff;
+}
+
+.nav-links a{
+  color: #c907f0;
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links{
+  position: absolute;
+  left:1120px;
+
+}
+.nav-links a:hover {
+  color: #8d09e5;
+  
+}
+
+.nav-links .btn {
+  background: #c009e5;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
 
     h1 {
       text-align: center;
@@ -24,7 +82,7 @@
     .imagen{
       width: 70%;
       height: 80%;
-      background-image: url(.);
+      background-image: url(./imagenes/Captura\ de\ pantalla\ 2025-12-02\ 140530.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -43,27 +101,10 @@
       width: 100%;
       height: 20%;
     }
-
-    /* Animaciones de entrada */
-    .imagen, .informacion {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .imagen.in-view, .informacion.in-view {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Hover en cards (si se usan) */
-    .card {
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px) scale(1.02);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.35);
-    }
-
+a{
+  color: inherit;
+  text-decoration: none;
+}
 
 
     

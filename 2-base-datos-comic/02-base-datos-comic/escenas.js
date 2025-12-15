@@ -25,8 +25,8 @@ contenedor.innerHTML=`
       <h1>${escenas.nombre}</h1>
 
 
-      <button class="btn play">▶ Play S1 E1</button>
-      <button class="btn download">⬇ Download</button>
+      <button class="btn play">▶ Inciar video</button>
+    
 
     </div>
   </section>
